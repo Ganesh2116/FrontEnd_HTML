@@ -1,0 +1,139 @@
+<!--Exercise 2: Restaurant Menu Page
+Create a simple restaurant menu webpage with the following HTML elements:
+
+Requirements:
+Use a heading to display the restaurant's name.
+Add a paragraph describing the restaurant.
+Use the pre tag to display a neatly formatted special dish recipe.
+Include an anchor tag linking to the restaurant’s online ordering page.
+Add an image of a signature dish.
+Highlight dish names using b (bold), emphasize important notes with u (underline), and add italicized text using i for descriptions.
+Display a discount offer with a price using sub (original price) and sup (discounted price).
+Use a div to separate sections for Starters, Main Course, and Desserts.
+List menu items using an ordered list for top-rated dishes and an unordered list for available drinks.
+Create a table showing meal combos with columns (Combo Name, Items, Price).
+Add a form for customers to make reservations (fields: Name, Date, Time, Guests).
+Embed a Google Maps location using an iframe.
+Would you like sample code for any of these exercises?-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Rushikesh Restaurant</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste dolor, beatae quia nulla est perspiciatis eum ipsa a, suscipit repellat minus doloribus quibusdam consectetur! Culpa incidunt ipsum minima voluptatem!
+    </p>
+    <pre>Pasta Primavera dishe</pre>
+   <p> Online order<a href="https://www.zomato.com/">Click here and Order.</a></p>
+   
+   <b>Pizaa</b>
+   <u> The vegetables are typically sautéed until tender-crisp to retain their natural sweetness and flavor.</u>
+   <i>Pasta Primavera is an Italian-inspired dish known for its vibrant mix of fresh, sautéed vegetables and pasta, often dressed in olive oil or a light garlic sauce. The dish is both healthy and delicious, emphasizing the use of fresh</i>
+   <img src="https://b.zmtcdn.com/data/o2_assets/d0bd7c9405ac87f6aa65e31fe55800941632716575.png"width="100" alt="pizaa"><br><br>
+   <b> Chicken Plate</b>
+   <u> The chicken can be prepared in various styles such as spicy, tangy, or smoky.</u>
+   <i>A Chicken Plate typically features a portion of chicken (grilled, fried, roasted, or cooked in a curry) served with sides like rice, bread, or vegetables. The chicken is often marinated in spices to enhance flavor and tenderness.</i>
+   <img src="https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" alt="dish"><br><br>
+
+   <b>Rice plate</b>
+   <u> Often served with a side of pickles, raita (yogurt dip), or salad</u>
+   <i>A Rice Plate is a simple, comforting dish featuring rice as the base. The rice is typically served with a combination of curries, meats, vegetables, or lentils, and is seasoned with aromatic spices. It’s a staple in many cuisines, such as Indian, Chinese, or Mediterranean.</i>
+   <img src="https://b.zmtcdn.com/data/o2_assets/e444ade83eb22360b6ca79e6e777955f1632716661.png" alt="ricePlate"><br><br>
+
+   <b>Roll</b>
+   <u> Can be served hot or cold, depending on the filling</u>
+   <i>A Roll (or wrap) is a handheld dish where a variety of ingredients are enclosed in a soft flatbread, such as a tortilla, pita, or naan. Common fillings include meats (chicken, beef, or lamb), vegetables, rice, and sauces. It’s often served as a convenient and portable meal</i>
+   <img src="https://b.zmtcdn.com/data/dish_images/c2f22c42f7ba90d81440a88449f4e5891634806087.png" alt="roll img"><br><br>
+
+
+
+   <sub>5000 DisCount<sup>500</sup></sub>
+    </div>
+
+    <section >
+        <h2>Starters</h2>
+        <div>Spring Rolls</div>
+        <div>Paneer Tikka</div>
+        <div>Stuffed Mushrooms</div>
+        <div>Chicken Wings</div>
+        <div>Hummus with Pita Bread</div>
+    </section>
+
+    <section >
+        <h2>Main Course</h2>
+        <div>Butter Chicken</div>
+        <div>Grilled Salmon</div>
+        <div>Vegetable Biryani</div>
+        <div>Spaghetti Aglio e Olio</div>
+        <div>Lamb Rogan Josh</div>
+    </section>
+
+    <section>
+        <h2>Desserts</h2>
+        <div>Tiramisu</div>
+        <div>Gulab Jamun</div>
+        <div>Cheesecake</div>
+        <div>Chocolate Lava Cake</div>
+        <div>Mango Sorbet</div>
+    </section>
+
+    <ol>
+        <li>Spaghetti Carbonara</li>
+        <li>Chicken Alfredo</li>
+        <li>Fish Tacos</li>
+        <li>Beef Stroganoff </li>
+        <li>Vegetable Stir-Fry </li>
+        <li>Margherita Pizza</li>
+        <li>Pulled Pork Sandwicd</li>
+    </ol>
+    <ul>
+        <li>Mojito</li>
+        <li>Piña Colada</li>
+        <li>Mai Tai</li>
+        <li>Beef Stroganoff </li>
+        <li>Vegetable Stir-Fry </li>
+        <li>Margherita Pizza</li>
+        <li>Pulled Pork Sandwicd</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Combo Name</th>
+            <th>Item</th>
+            <th>Prices</th>
+        </tr>
+        <tr>
+            <td>Fiesta Combo</td>
+            <td>Drink</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Veggie</td>
+            <td>Hard Drink</td>
+            <td>5000</td>
+        </tr>
+    </table>
+
+    <form >
+        <p>Name</p>
+        <input type="text" ><br><br>
+        <p>Date</p>
+        <input type="date"><br><br>
+        <p>Time</p>
+        <input type="time" ><br><br>
+        <p>Number of Guests</p>
+        <input type="number"><br><br>
+    </form>
+
+    <iframe  width="900" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.0104291278527!2d77.1400454!3d19.3017738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd02d62a8c7715f%3A0xb71f46e040d6a403!2sBhoripgaon%2C%20Maharashtra%20431512%2C%20India!5e0!3m2!1sen!2sus!4v1676737372290!5m2!1sen!2sus" 
+ 
+    ></iframe>
+
+</body>
+</html>
